@@ -259,6 +259,7 @@ function setActiveScoreEvent(index) {
   if (!scoreRoot) return;
   scoreRoot.querySelectorAll(".score-note").forEach(node => {
     node.classList.toggle("playing", Number(node.dataset.eventIndex) === index);
+    document.querySelector('.score-note.playing')?.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
   });
 }
 
@@ -277,7 +278,7 @@ function renderScore() {
   const width = Math.max(380, 100 + musicalEvents.length * spacing + barCount * 15);
   const height = Math.max(190, staffBottom + fontSize * 4.5);
   const staffLines = Array.from({ length: 5 }, (_, i) =>
-    `<line x1="58" y1="${top + i * lineGap}" x2="${width - 18}" y2="${top + i * lineGap}" class="staff-line"/>`
+    `<line x1="58" y1="${top + i * lineGap}" x2="${width - 10}" y2="${top + i * lineGap}" class="staff-line"/>`
   ).join("");
 
   let x = 92;

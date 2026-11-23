@@ -145,7 +145,7 @@
 .score-heading { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 10px 14px 0; color: #283346; font-size: 13px; }
 .score-heading span, .score-legend { color: #596477; font-size: 11px; }
 .score-scroll { overflow-x: auto; overflow-y: hidden; padding: 4px 8px 0; }
-.music-score { display: block; min-width: 100%; height: 150px; }
+.music-score { display: block; min-width: 100%; height: 150px; padding: 100px 24px 0; }
 .staff-line { stroke: #626b78; stroke-width: 1.15; }
 .bar-line, .ledger-line { stroke: #626b78; stroke-width: 1.2; }
 .note-head { fill: #202633; stroke: #202633; stroke-width: 1; }
@@ -204,15 +204,24 @@
   transition: stroke .12s ease;
 }
 .score-note.playing .note-head {
-  fill: #e34b35;
-  stroke: #9f2419;
-  filter: drop-shadow(0 0 5px rgba(227,75,53,.75));
+  fill: #2585B5;
+  stroke: #2585B5;
 }
+
 .score-note.playing .note-stem {
-  stroke: #c43125;
+  stroke: #2585B5;
   stroke-width: 2.8;
 }
+
 .score-note.playing .note-label {
-  fill: #b52c20;
+  fill: #2585B5;
+  font-weight: 800;
+}
+.score-note.playing .accidental {
+  fill: #2585B5;
+  font-weight: 800;
+}
+.score-note.playing .ledger-line {
+  fill: #2585B5;
   font-weight: 800;
 }
