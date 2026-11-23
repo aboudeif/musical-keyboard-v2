@@ -1,0 +1,542 @@
+[
+  {
+    "number": 1,
+    "name_ar": "شعبي مصري",
+    "name_en": "Egyptian Shaabi",
+    "bpm": 112,
+    "midi": "01.mid",
+    "tracks": [
+      "Percussion",
+      "Bass",
+      "Chord comping",
+      "Lead melody"
+    ],
+    "gm_programs": {
+      "lead": 111,
+      "chords": 16,
+      "bass": 38
+    }
+  },
+  {
+    "number": 2,
+    "name_ar": "مهرجانات",
+    "name_en": "Mahraganat",
+    "bpm": 140,
+    "midi": "02.mid",
+    "tracks": [
+      "Percussion",
+      "Bass",
+      "Chord comping",
+      "Lead melody"
+    ],
+    "gm_programs": {
+      "lead": 81,
+      "chords": 88,
+      "bass": 38
+    }
+  },
+  {
+    "number": 3,
+    "name_ar": "بلدي",
+    "name_en": "Baladi",
+    "bpm": 96,
+    "midi": "03.mid",
+    "tracks": [
+      "Percussion",
+      "Bass",
+      "Chord comping",
+      "Lead melody"
+    ],
+    "gm_programs": {
+      "lead": 111,
+      "chords": 48,
+      "bass": 32
+    }
+  },
+  {
+    "number": 4,
+    "name_ar": "صعيدي",
+    "name_en": "Saidi",
+    "bpm": 118,
+    "midi": "04.mid",
+    "tracks": [
+      "Percussion",
+      "Bass",
+      "Chord comping",
+      "Lead melody"
+    ],
+    "gm_programs": {
+      "lead": 109,
+      "chords": 48,
+      "bass": 32
+    }
+  },
+  {
+    "number": 5,
+    "name_ar": "إسكندراني",
+    "name_en": "Alexandrian Folk",
+    "bpm": 108,
+    "midi": "05.mid",
+    "tracks": [
+      "Percussion",
+      "Bass",
+      "Chord comping",
+      "Lead melody"
+    ],
+    "gm_programs": {
+      "lead": 110,
+      "chords": 24,
+      "bass": 32
+    }
+  },
+  {
+    "number": 6,
+    "name_ar": "دبكة شامية",
+    "name_en": "Levantine Dabke",
+    "bpm": 128,
+    "midi": "06.mid",
+    "tracks": [
+      "Percussion",
+      "Bass",
+      "Chord comping",
+      "Lead melody"
+    ],
+    "gm_programs": {
+      "lead": 110,
+      "chords": 25,
+      "bass": 34
+    }
+  },
+  {
+    "number": 7,
+    "name_ar": "خليجي",
+    "name_en": "Khaleeji",
+    "bpm": 104,
+    "midi": "07.mid",
+    "tracks": [
+      "Percussion",
+      "Bass",
+      "Chord comping",
+      "Lead melody"
+    ],
+    "gm_programs": {
+      "lead": 104,
+      "chords": 48,
+      "bass": 32
+    }
+  },
+  {
+    "number": 8,
+    "name_ar": "مقسوم",
+    "name_en": "Maqsum",
+    "bpm": 110,
+    "midi": "08.mid",
+    "tracks": [
+      "Percussion",
+      "Bass",
+      "Chord comping",
+      "Lead melody"
+    ],
+    "gm_programs": {
+      "lead": 111,
+      "chords": 24,
+      "bass": 32
+    }
+  },
+  {
+    "number": 9,
+    "name_ar": "ملفوف",
+    "name_en": "Malfuf",
+    "bpm": 132,
+    "midi": "09.mid",
+    "tracks": [
+      "Percussion",
+      "Bass",
+      "Chord comping",
+      "Lead melody"
+    ],
+    "gm_programs": {
+      "lead": 111,
+      "chords": 48,
+      "bass": 32
+    }
+  },
+  {
+    "number": 10,
+    "name_ar": "وحدة ونص",
+    "name_en": "Wahda",
+    "bpm": 84,
+    "midi": "10.mid",
+    "tracks": [
+      "Percussion",
+      "Bass",
+      "Chord comping",
+      "Lead melody"
+    ],
+    "gm_programs": {
+      "lead": 110,
+      "chords": 48,
+      "bass": 32
+    }
+  },
+  {
+    "number": 11,
+    "name_ar": "سامري",
+    "name_en": "Samri",
+    "bpm": 100,
+    "midi": "11.mid",
+    "tracks": [
+      "Percussion",
+      "Bass",
+      "Chord comping",
+      "Lead melody"
+    ],
+    "gm_programs": {
+      "lead": 104,
+      "chords": 48,
+      "bass": 32
+    }
+  },
+  {
+    "number": 12,
+    "name_ar": "ليوا",
+    "name_en": "Liwa",
+    "bpm": 116,
+    "midi": "12.mid",
+    "tracks": [
+      "Percussion",
+      "Bass",
+      "Chord comping",
+      "Lead melody"
+    ],
+    "gm_programs": {
+      "lead": 110,
+      "chords": 48,
+      "bass": 32
+    }
+  },
+  {
+    "number": 13,
+    "name_ar": "ريجي",
+    "name_en": "Reggae",
+    "bpm": 76,
+    "midi": "13.mid",
+    "tracks": [
+      "Percussion",
+      "Bass",
+      "Chord comping",
+      "Lead melody"
+    ],
+    "gm_programs": {
+      "lead": 27,
+      "chords": 16,
+      "bass": 38
+    }
+  },
+  {
+    "number": 14,
+    "name_ar": "روك",
+    "name_en": "Rock",
+    "bpm": 120,
+    "midi": "14.mid",
+    "tracks": [
+      "Percussion",
+      "Bass",
+      "Chord comping",
+      "Lead melody"
+    ],
+    "gm_programs": {
+      "lead": 29,
+      "chords": 29,
+      "bass": 34
+    }
+  },
+  {
+    "number": 15,
+    "name_ar": "بوب",
+    "name_en": "Pop",
+    "bpm": 112,
+    "midi": "15.mid",
+    "tracks": [
+      "Percussion",
+      "Bass",
+      "Chord comping",
+      "Lead melody"
+    ],
+    "gm_programs": {
+      "lead": 10,
+      "chords": 4,
+      "bass": 33
+    }
+  },
+  {
+    "number": 16,
+    "name_ar": "ديسكو",
+    "name_en": "Disco",
+    "bpm": 124,
+    "midi": "16.mid",
+    "tracks": [
+      "Percussion",
+      "Bass",
+      "Chord comping",
+      "Lead melody"
+    ],
+    "gm_programs": {
+      "lead": 81,
+      "chords": 16,
+      "bass": 38
+    }
+  },
+  {
+    "number": 17,
+    "name_ar": "فانك",
+    "name_en": "Funk",
+    "bpm": 104,
+    "midi": "17.mid",
+    "tracks": [
+      "Percussion",
+      "Bass",
+      "Chord comping",
+      "Lead melody"
+    ],
+    "gm_programs": {
+      "lead": 26,
+      "chords": 4,
+      "bass": 38
+    }
+  },
+  {
+    "number": 18,
+    "name_ar": "جاز سوينج",
+    "name_en": "Jazz Swing",
+    "bpm": 142,
+    "midi": "18.mid",
+    "tracks": [
+      "Percussion",
+      "Bass",
+      "Chord comping",
+      "Lead melody"
+    ],
+    "gm_programs": {
+      "lead": 66,
+      "chords": 0,
+      "bass": 32
+    }
+  },
+  {
+    "number": 19,
+    "name_ar": "بلوز",
+    "name_en": "Blues",
+    "bpm": 92,
+    "midi": "19.mid",
+    "tracks": [
+      "Percussion",
+      "Bass",
+      "Chord comping",
+      "Lead melody"
+    ],
+    "gm_programs": {
+      "lead": 26,
+      "chords": 4,
+      "bass": 32
+    }
+  },
+  {
+    "number": 20,
+    "name_ar": "لاتيني",
+    "name_en": "Latin",
+    "bpm": 112,
+    "midi": "20.mid",
+    "tracks": [
+      "Percussion",
+      "Bass",
+      "Chord comping",
+      "Lead melody"
+    ],
+    "gm_programs": {
+      "lead": 24,
+      "chords": 24,
+      "bass": 32
+    }
+  },
+  {
+    "number": 21,
+    "name_ar": "سالسا",
+    "name_en": "Salsa",
+    "bpm": 184,
+    "midi": "21.mid",
+    "tracks": [
+      "Percussion",
+      "Bass",
+      "Chord comping",
+      "Lead melody"
+    ],
+    "gm_programs": {
+      "lead": 104,
+      "chords": 24,
+      "bass": 32
+    }
+  },
+  {
+    "number": 22,
+    "name_ar": "سامبا",
+    "name_en": "Samba",
+    "bpm": 100,
+    "midi": "22.mid",
+    "tracks": [
+      "Percussion",
+      "Bass",
+      "Chord comping",
+      "Lead melody"
+    ],
+    "gm_programs": {
+      "lead": 24,
+      "chords": 24,
+      "bass": 32
+    }
+  },
+  {
+    "number": 23,
+    "name_ar": "تانجو",
+    "name_en": "Tango",
+    "bpm": 124,
+    "midi": "23.mid",
+    "tracks": [
+      "Percussion",
+      "Bass",
+      "Chord comping",
+      "Lead melody"
+    ],
+    "gm_programs": {
+      "lead": 44,
+      "chords": 48,
+      "bass": 32
+    }
+  },
+  {
+    "number": 24,
+    "name_ar": "فلامنكو",
+    "name_en": "Flamenco",
+    "bpm": 120,
+    "midi": "24.mid",
+    "tracks": [
+      "Percussion",
+      "Bass",
+      "Chord comping",
+      "Lead melody"
+    ],
+    "gm_programs": {
+      "lead": 24,
+      "chords": 25,
+      "bass": 32
+    }
+  },
+  {
+    "number": 25,
+    "name_ar": "هاوس",
+    "name_en": "House",
+    "bpm": 124,
+    "midi": "25.mid",
+    "tracks": [
+      "Percussion",
+      "Bass",
+      "Chord comping",
+      "Lead melody"
+    ],
+    "gm_programs": {
+      "lead": 81,
+      "chords": 88,
+      "bass": 38
+    }
+  },
+  {
+    "number": 26,
+    "name_ar": "ترانس",
+    "name_en": "Trance",
+    "bpm": 138,
+    "midi": "26.mid",
+    "tracks": [
+      "Percussion",
+      "Bass",
+      "Chord comping",
+      "Lead melody"
+    ],
+    "gm_programs": {
+      "lead": 88,
+      "chords": 89,
+      "bass": 38
+    }
+  },
+  {
+    "number": 27,
+    "name_ar": "هيب هوب",
+    "name_en": "Hip-Hop",
+    "bpm": 88,
+    "midi": "27.mid",
+    "tracks": [
+      "Percussion",
+      "Bass",
+      "Chord comping",
+      "Lead melody"
+    ],
+    "gm_programs": {
+      "lead": 4,
+      "chords": 88,
+      "bass": 38
+    }
+  },
+  {
+    "number": 28,
+    "name_ar": "آر أند بي",
+    "name_en": "R&B",
+    "bpm": 72,
+    "midi": "28.mid",
+    "tracks": [
+      "Percussion",
+      "Bass",
+      "Chord comping",
+      "Lead melody"
+    ],
+    "gm_programs": {
+      "lead": 4,
+      "chords": 89,
+      "bass": 38
+    }
+  },
+  {
+    "number": 29,
+    "name_ar": "سينمائي ملحمي",
+    "name_en": "Cinematic",
+    "bpm": 90,
+    "midi": "29.mid",
+    "tracks": [
+      "Percussion",
+      "Bass",
+      "Chord comping",
+      "Lead melody"
+    ],
+    "gm_programs": {
+      "lead": 48,
+      "chords": 50,
+      "bass": 43
+    }
+  },
+  {
+    "number": 30,
+    "name_ar": "شرقي رومانسي",
+    "name_en": "Oriental Romance",
+    "bpm": 78,
+    "midi": "30.mid",
+    "tracks": [
+      "Percussion",
+      "Bass",
+      "Chord comping",
+      "Lead melody"
+    ],
+    "gm_programs": {
+      "lead": 73,
+      "chords": 48,
+      "bass": 32
+    }
+  }
+]

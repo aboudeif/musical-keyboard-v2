@@ -1,0 +1,218 @@
+:root{--bg:#10131b;--panel:#1b2230;--line:#354157;--gold:#f4b942;--muted:#aab4c5}*{box-sizing:border-box}body{margin:0;padding:22px;background:radial-gradient(circle at top,#29354b,#10131b 60%);color:#f7f8fb;font-family:system-ui,"Segoe UI",sans-serif;min-height:100vh}.app{max-width:1100px;margin:auto}.head{text-align:center;margin:0 0 20px}.head h1{font-size:clamp(25px,4vw,40px);margin:0 0 6px}.head p{color:var(--muted);margin:0}.panel{background:#1b2230ed;border:1px solid var(--line);border-radius:20px;padding:20px;box-shadow:0 20px 60px #0006}.toolbar,.playback{display:flex;gap:12px;align-items:center;justify-content:center;flex-wrap:wrap;margin-bottom:16px}.action{background:#303c51;color:#fff;border:1px solid #52627b;border-radius:10px;padding:10px 15px;cursor:pointer}.primary{background:var(--gold);color:#24201a;border-color:#ffd779;font-weight:800}button,input,select{font:inherit}.action:disabled{opacity:.45;cursor:wait}.status{min-height:26px;text-align:center;color:var(--gold);margin:8px 0 14px}label.control{display:flex;align-items:center;gap:8px;color:#dce3ef;font-size:14px}input[type=range]{accent-color:var(--gold);width:130px}.backing{border:1px solid #43516a;border-radius:16px;padding:15px;background:linear-gradient(#111824,#202a3a);margin:12px 0 22px}.backing-top{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:12px}.backing-top strong{font-size:18px}.now{color:var(--gold);font-size:13px}.styles{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:11px}.style-key{min-height:76px;border:1px solid #5c6b83;border-radius:8px;color:#f3f6fc;background:linear-gradient(#4b5b72,#273346);box-shadow:0 5px 0 #111722,0 7px 10px #0005,inset 0 1px #ffffff25;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;padding:7px;text-align:center;cursor:pointer}.style-key:before{content:"";position:absolute;top:7px;right:8px;width:6px;height:6px;border-radius:50%;background:#62718a}.style-key{position:relative}.style-key .num{font:600 9px ui-monospace;color:#b8c4d7;letter-spacing:1px}.style-key .ar{font-weight:800;font-size:14px}.style-key .en{font-size:10px;color:#c0cada}.style-key.active{background:linear-gradient(#fff0bd,#f4b942 60%,#d88f14);color:#30230c;border-color:#ffe4a1;box-shadow:0 2px 0 #865a0e,0 0 16px #f4b94255;transform:translateY(3px)}.style-key.active:before{background:#29d879;box-shadow:0 0 8px #29d879}.style-key.active .num,.style-key.active .en{color:#684a18}.keys{display:grid;grid-template-columns:repeat(13,minmax(0,1fr));gap:5px;direction:ltr;margin:15px 0}.note-key{height:115px;border-radius:0 0 8px 8px;background:linear-gradient(#fff,#dfe4ec);border:1px solid #aeb7c5;color:#1b2230;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;padding:7px 2px;font-weight:800;box-shadow:0 5px 0 #9ca6b6;cursor:pointer}.note-key.black{background:linear-gradient(#49546a,#151c28);color:#fff;border-color:#0b0f16;height:82px;margin:0 0 33px;box-shadow:0 4px 0 #080b10}.note-key small{font-size:10px;font-weight:500;opacity:.75}.writer{margin-top:18px}.writer label{display:block;margin-bottom:8px;font-weight:700}textarea{width:100%;background:#111824;color:#fff;border:1px solid #45536a;border-radius:10px;padding:12px;resize:vertical}footer{text-align:center;color:#9ca8ba;font-size:12px;margin:16px}@media(max-width:760px){.styles{grid-template-columns:repeat(3,minmax(0,1fr))}.keys{grid-template-columns:repeat(7,minmax(0,1fr))}.note-key{height:90px}.note-key.black{height:70px;margin-bottom:20px}}@media(max-width:420px){.styles{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Radio-key profile controls */
+
+#styleRoot {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    padding: 20px 10px;
+}
+
+.style-key {
+    appearance: none;
+    border: none;
+    background: transparent;
+    padding: 5px;
+    width: 62px;
+    height: 82px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    cursor: pointer;
+    outline: none;
+}
+
+.radio-key {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background:
+        linear-gradient(145deg, #343a40, #15191d);
+    border: 2px solid #59616a;
+    box-shadow:
+        inset 2px 2px 5px rgba(255,255,255,.08),
+        inset -3px -3px 7px rgba(0,0,0,.55),
+        0 4px 8px rgba(0,0,0,.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s ease;
+}
+
+.radio-light {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #555d65;
+    border: 2px solid #737d87;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,.6);
+    transition: all .2s ease;
+}
+
+.radio-number {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #89929b;
+    font-family: monospace;
+}
+
+.style-key:hover .radio-key {
+    border-color: #d5a52c;
+    transform: translateY(-2px);
+}
+
+.style-key.active .radio-key {
+    background: linear-gradient(145deg, #343a40, #171b1f);
+    border-color: #ffc83d;
+    box-shadow:
+        0 0 0 3px rgba(255,200,61,.12),
+        0 0 15px rgba(255,190,40,.35),
+        inset 2px 2px 5px rgba(255,255,255,.08);
+}
+
+.style-key.active .radio-light {
+    background: #ffd34e;
+    border-color: #fff0a6;
+    box-shadow:
+        0 0 6px #ffd34e,
+        0 0 14px rgba(255,190,40,.9);
+}
+
+.style-key.active .radio-number {
+    color: #ffc83d;
+}
+
+.style-key:focus-visible .radio-key {
+    outline: 2px solid #ffc83d;
+    outline-offset: 4px;
+}
+
+/* Horizontal Radio Group */
+#styles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 14px;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 15px 10px;
+}
+
+/* Radio buttons */
+#styles .style-key {
+    flex: 0 0 76px;
+    width: 76px;
+    height: 90px;
+}
+
+
+/* Override legacy arranger button styles with the radio-key design. */
+#styles .style-key {
+  all: unset;
+  box-sizing: border-box;
+  flex: 0 0 76px;
+  width: 76px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+#styles .style-key::before { content: none; }
+#styles .style-key.active { transform: none; }
+#styles .style-key:focus-visible .radio-key {
+  outline: 2px solid #ffd05a;
+  outline-offset: 4px;
+}
+
+
+/* Music notation editor */
+.writer-help { color: var(--muted); font-size: 12px; margin: 7px 2px 12px; line-height: 1.7; }
+.score-preview { margin-top: 12px; border: 1px solid #43516a; border-radius: 12px; background: linear-gradient(180deg, #f7f4e9, #e9e4d5); color: #202633; overflow: hidden; }
+.score-heading { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 10px 14px 0; color: #283346; font-size: 13px; }
+.score-heading span, .score-legend { color: #596477; font-size: 11px; }
+.score-scroll { overflow-x: auto; overflow-y: hidden; padding: 4px 8px 0; }
+.music-score { display: block; min-width: 100%; height: 150px; }
+.staff-line { stroke: #626b78; stroke-width: 1.15; }
+.bar-line, .ledger-line { stroke: #626b78; stroke-width: 1.2; }
+.note-head { fill: #202633; stroke: #202633; stroke-width: 1; }
+.note-stem { stroke: #202633; stroke-width: 1.8; }
+.note-label { fill: #697386; font: 10px system-ui, sans-serif; }
+.accidental { fill: #202633; font: 19px Georgia, serif; }
+.rest-symbol { fill: #202633; font: 35px "Noto Music", "Bravura", "Segoe UI Symbol", serif; }
+.clef { fill: #202633; font: 52px "Noto Music", "Bravura", "Segoe UI Symbol", serif; }
+.score-legend { padding: 7px 14px 11px; border-top: 1px solid #d2cbbb; }
+
+
+/* Resizable notation and live playback cursor */
+.score-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 12px 2px 8px;
+  color: #dce3ef;
+  font-size: 13px;
+}
+.score-toolbar output {
+  color: var(--gold);
+  font-weight: 800;
+  min-width: 2ch;
+}
+.score-toolbar input[type="range"] {
+  width: min(220px, 45vw);
+  accent-color: var(--gold);
+}
+.score-preview { overflow: hidden; }
+.score-scroll {
+  overflow-x: auto;
+  overflow-y: auto;
+  max-height: 360px;
+  padding: 8px 12px;
+}
+.music-score {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-width: 380px;
+  overflow: visible;
+}
+.score-note {
+  transition: filter .12s ease, opacity .12s ease;
+}
+.score-note .note-head {
+  fill: #202633;
+  stroke: #202633;
+  transition: fill .12s ease, stroke .12s ease, filter .12s ease;
+}
+.score-note .note-stem {
+  stroke: #202633;
+  transition: stroke .12s ease;
+}
+.score-note.playing .note-head {
+  fill: #e34b35;
+  stroke: #9f2419;
+  filter: drop-shadow(0 0 5px rgba(227,75,53,.75));
+}
+.score-note.playing .note-stem {
+  stroke: #c43125;
+  stroke-width: 2.8;
+}
+.score-note.playing .note-label {
+  fill: #b52c20;
+  font-weight: 800;
+}
